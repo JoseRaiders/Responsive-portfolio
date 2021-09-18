@@ -1,0 +1,164 @@
+body {
+    margin-top: 100px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 300;
+    opacity: 0.7;
+    margin-top: 10px;
+}
+
+:root {
+    --primary-color: #30475E;
+    --secondary-color: #F05454;
+    --tertiary-color: #DDDDDD;
+    --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.homepage {
+    margin: 60px auto;
+    max-width: 800px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.navigation a {
+    margin: 20px;
+    border-radius: 4px;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.contact-link {
+    background: var(--primary-color);
+    box-shadow: var(--box-shadow);
+    color: #fff;
+}
+
+.contact-link:hover, .app-link:hover {
+    background: var(--secondary-color);
+    box-shadow: var(--box-shadow);
+    color: #fff;
+}
+
+.about-link {
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.about-link:hover {
+    background: var(--primary-color);
+    box-shadow: var(--box-shadow);
+    border: 1px solid var(--primary-color);
+    color: white;
+}
+
+.app-link {
+    background: var(--primary-color);
+    box-shadow: var(--box-shadow);
+    color: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+/* ---ABOUT ME---*/
+
+.about {
+    background: #222831;
+    color: #fff;
+    margin: 60px auto;
+    max-width: 800px;
+}
+
+.homepage-link {
+    color: var(--secondary-color);
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+
+.homepage-link:hover {
+    color: var(--tertiary-color);
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+.about-info {
+    display: flex;
+    margin: 30px 0;
+}
+
+.about-info p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background: var(--tertiary-color);
+    color: var(--primary-color);
+    border-radius: 4px;
+
+}
+
+.email-link {
+    display: flex;
+    justify-content: center;
+    color: var(--secondary-color);
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.email-link:hover {
+    color: var(--tertiary-color);
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    cursor: help;
+}
+
+/*---EMOJI WAVE---*/
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: initial;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }
+  100% { transform: rotate( 0.0deg) }
+}
