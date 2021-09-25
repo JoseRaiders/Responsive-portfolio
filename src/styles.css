@@ -1,5 +1,5 @@
 body {
-    margin-top: 100px;
+    margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -25,15 +25,28 @@ h3 {
 }
 
 :root {
-    --primary-color: #30475E;
-    --secondary-color: #F05454;
-    --tertiary-color: #DDDDDD;
+    --primary-color: #222831;
+    --secondary-color: #ff5722;
+    --tertiary-color: #2d4059;
     --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-.about {
-    margin: 60px auto;
-    max-width: 800px;
+/*---PARALLAX SCROLLING---*/
+.parallax-homepage {
+    background-image: url("/images/white_keyboard-unsplash.jpg");
+
+    /* Set a specific height */
+    min-height: 450px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.solid-background {
+   background-color: #eeeeee;
 }
 
 .navigation {
@@ -58,20 +71,20 @@ h3 {
 }
 
 .contact-link:hover, .app-link:hover {
-    background: var(--secondary-color);
+    background: var(--tertiary-color);
     box-shadow: var(--box-shadow);
     color: #fff;
 }
 
 .about-link {
-    color: var(--secondary-color);
-    border: 1px solid var(--secondary-color);
+    color: var(--tertiary-color);
+    border: 1px solid var(--tertiary-color);
 }
 
 .about-link:hover {
-    background: var(--primary-color);
+    background: var(--secondary-color);
     box-shadow: var(--box-shadow);
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--secondary-color);
     color: white;
 }
 
@@ -87,14 +100,23 @@ h3 {
     font-size: 16px;
 }
 
+.work {
+    padding-top: 50px;
+}
+
 /* ---ABOUT ME---*/
+.about {
+    margin: 100px auto;
+    max-width: 800px;
+}
+
 .about-info p {
     font-size: 18px;
     line-height: 1.5;
     text-align: center;
     margin: 20px;
     padding: 20px;
-    background: var(--tertiary-color);
+    background: #eeeeee;
     color: var(--primary-color);
     border-radius: 4px;
 }
@@ -117,11 +139,12 @@ h3 {
 
 /*---EMOJI WAVE---*/
 .wave {
-  animation-name: wave-animation;
-  animation-duration: 2.5s;
-  animation-iteration-count: initial;
-  transform-origin: 70% 70%;
-  display: inline-block;
+    margin-top: 100px;
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: initial;
+    transform-origin: 70% 70%;
+    display: inline-block;
 }
 
 @keyframes wave-animation {
